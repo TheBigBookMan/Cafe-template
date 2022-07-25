@@ -1,9 +1,10 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Courgette', cursive;
     box-sizing: border-box;
     --primary-color: rgb(235, 217, 217);
-    --secondary-color: rgb(181, 166, 166);
+    --secondary-color: rgb(179, 168, 168);
 }
 
 /*Header*/
@@ -14,7 +15,7 @@
     height: 100px;
     background-color: var(--primary-color);
 } 
-n
+
 /* Navigation*/
 .navbar {
     display: flex;
@@ -40,6 +41,10 @@ n
     font-weight: bolder;
 }
 
+.nav-link:active {
+    color: gray;
+}
+
 /*Social Media Icons*/
 .social-icons {
     display: flex;
@@ -52,4 +57,37 @@ n
 
 .icon-link {
     text-decoration: none;
+}
+
+/*Main*/
+main {
+    
+}
+
+/* Home*/
+#home {
+    background-image: url(./Images/white.jpg);
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-container {
+    
+    width: 700px;
+    border: black solid 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cafe-title {
+    font-size: 5rem;
+}
+
+.cafe-description {
+    font-size: 2rem;
 }
