@@ -12,13 +12,15 @@
     justify-content: center;
     align-items: center;
     height: 100px;
-    border: black 3px solid;
     background-color: var(--primary-color);
 } 
 
 /* Navigation*/
 .navbar {
-    margin-right: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
 }
 
 .nav-section {
@@ -28,7 +30,7 @@
 }
 
 .nav {
-    margin-right: 10px;
+    margin-right: 2rem;;
 }
 
 .nav-link {
@@ -39,6 +41,15 @@
 }
 
 /*Social Media Icons*/
-.social-media {
-    border: red solid 2px;
-} 
+.social-icons {
+    display: flex;
+}
+
+.icon {
+    margin-right: 1.75rem;
+    size: 4em;
+}
+
+.icon-link {
+    text-decoration: none;
+}
