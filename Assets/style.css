@@ -5,6 +5,7 @@
     box-sizing: border-box;
     --primary-color: rgb(235, 217, 217);
     --secondary-color: rgb(179, 168, 168);
+    --font-title-size: 2.25rem;
 }
 
 /*Header*/
@@ -104,7 +105,7 @@ main {
 }
 
 .about-title {
-    font-size: 2.25rem;
+    font-size: var(--font-title-size);
 }
 
 .about-info {
@@ -112,4 +113,21 @@ main {
     width: 800px;
     line-height: 40px;
     text-align: center;
+}
+
+/* Menu section*/
+#menu {
+    border: black solid 2px;
+    height: 700px;
+}
+
+.menu-container {
+    border: red solid 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-title {
+    font-size: var(--font-title-size);
 }
