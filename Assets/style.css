@@ -40,9 +40,10 @@
     color: var(--secondary-color);
     font-size: 1.5rem;
     font-weight: bolder;
+    transition: all 0.3s ease;
 }
 
-.nav-link:active {
+.nav-link:hover {
     color: gray;
 }
 
@@ -58,6 +59,22 @@
 
 .icon-link {
     text-decoration: none;
+}
+
+/* Hamburger*/
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
 }
 
 /*Main*/
@@ -110,7 +127,7 @@ main {
 
 .about-info {
     margin-top: 20px;
-    width: 800px;
+    width: 80%;
     line-height: 40px;
     text-align: center;
 }
@@ -130,4 +147,45 @@ main {
 
 .menu-title {
     font-size: var(--font-title-size);
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .navbar {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        height: 400px;
+        gap: 0;
+        flex-direction: column;
+        background-color: var(--primary-color);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .navbar.active {
+        left: 0;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-section {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin-top: 100px;
+    }
 }
