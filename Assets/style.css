@@ -17,6 +17,13 @@
     background-color: var(--primary-color);
 } 
 
+.nav-title {
+    width: 350px;
+    margin-left: 20px;
+    font-size: 2rem;
+    text-align: center;
+}
+
 /* Navigation*/
 .navbar {
     display: flex;
@@ -101,6 +108,8 @@ main {
 
 .cafe-title {
     font-size: 5rem;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .cafe-description {
@@ -111,7 +120,7 @@ main {
 
 /*About section*/
 #about {
-    margin-bottom: 40px;
+    margin-bottom: 80px;
 }
 
 .about-container {
@@ -122,6 +131,7 @@ main {
 
 .about-title {
     font-size: var(--font-title-size);
+    text-align: center;
 }
 
 .about-info {
@@ -144,6 +154,7 @@ main {
 
 .menu-title {
     font-size: var(--font-title-size);
+    text-align: center;
 }
 
 .order-items {
@@ -209,8 +220,34 @@ li {
     font-size: 1.25rem;
 }
 
+/* Contact section*/
+#contact {
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.contact-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    line-height: 40px;
+}
+
 /*Media queries*/
 @media screen and (max-width: 768px) {
+    .nav-title {
+        position: absolute;
+        left: -70px;
+    }
+
     .hamburger {
         position: relative;
         left: 40%;
