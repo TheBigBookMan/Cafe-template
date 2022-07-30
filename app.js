@@ -15,3 +15,8 @@ document.querySelectorAll(".icon-link").forEach(n => n.addEventListener("click",
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }))
+
+document.addEventListener('wheel', () => {
+    navMenu.classList.remove("active");
+    hamburger.classList.remove("active");
+})
