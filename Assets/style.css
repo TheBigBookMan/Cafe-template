@@ -79,7 +79,7 @@
 
 /*Main*/
 main {
-    background-image: url(./Images/white.jpg);
+    background-image: url(/Assets/Images/white.jpg);
     background-size: cover;
 }
 
@@ -135,7 +135,7 @@ main {
 /* Menu section*/
 #menu {
     border: black solid 2px;
-    height: 700px;
+    margin-bottom: 20px;
 }
 
 .menu-container {
@@ -149,6 +149,71 @@ main {
     font-size: var(--font-title-size);
 }
 
+.order-items {
+    border: solid 3px green;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style-type: none;
+}
+
+.menu-img {
+    height: 200px;
+    width: 200px;
+    margin: 2px auto;
+}
+
+.menu-list-food {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.food-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: solid 2px blueviolet;
+    width: 200px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.food-title {
+    color: var(--secondary-color);
+    font-weight: bolder;
+    font-size: 1.25rem;
+    max-height: 100px;
+}
+
+.menu-list-drinks {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.drink-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: solid 2px blueviolet;
+    width: 200px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.drink-title {
+    color: var(--secondary-color);
+    font-weight: bolder;
+    font-size: 1.25rem;
+    max-height: 100px;
+}
+
+/*Media queries*/
 @media screen and (max-width: 768px) {
     .hamburger {
         position: relative;
