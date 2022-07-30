@@ -111,7 +111,6 @@ main {
 
 /*About section*/
 #about {
-    height: 300px;
     margin-bottom: 40px;
 }
 
@@ -134,12 +133,10 @@ main {
 
 /* Menu section*/
 #menu {
-    border: black solid 2px;
     margin-bottom: 20px;
 }
 
 .menu-container {
-    border: red solid 3px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -150,7 +147,6 @@ main {
 }
 
 .order-items {
-    border: solid 3px green;
     width: 100%;
     justify-content: space-between;
 }
@@ -162,22 +158,24 @@ li {
 .menu-img {
     height: 200px;
     width: 200px;
-    margin: 2px auto;
+    margin: 10px auto;
+    border-radius: 20px;
+    filter: drop-shadow(11px 7px 7px var(--secondary-color))
 }
 
 .menu-list-food {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    
+    margin-top: 20px;
 }
 
 .food-item {
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: solid 2px blueviolet;
-    width: 200px;
+    width: 400px;
     text-align: center;
     line-height: 40px;
 }
@@ -186,7 +184,6 @@ li {
     color: var(--secondary-color);
     font-weight: bolder;
     font-size: 1.25rem;
-    max-height: 100px;
 }
 
 .menu-list-drinks {
@@ -197,11 +194,11 @@ li {
 }
 
 .drink-item {
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: solid 2px blueviolet;
-    width: 200px;
+    width: 400px;
     text-align: center;
     line-height: 40px;
 }
@@ -210,7 +207,6 @@ li {
     color: var(--secondary-color);
     font-weight: bolder;
     font-size: 1.25rem;
-    max-height: 100px;
 }
 
 /*Media queries*/
